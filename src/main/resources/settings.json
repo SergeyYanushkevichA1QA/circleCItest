@@ -1,0 +1,49 @@
+{
+  "platformName": "android",
+  "isRemote": true,
+  "remoteConnectionUrl": "http://hub.browserstack.com/wd/hub",
+  "screensLocation": "src/main/java/by/a1qa/screens",
+  "driverSettings": {
+    "android": {
+      "deviceKey": "Android_Emulator",
+      "capabilities": {
+        "browserstack.user": "sergeyyas1",
+        "browserstack.key": "7zfq7VzhqAEyNQbuHCye",
+        "app": "bs://f2e42ad68f7576e681f0df036b60795a23b18ee5",
+        "real_mobile": true,
+        "browserstack.local": false
+      }
+    }
+  },
+  "localServiceSettings": {
+    "arguments": {
+      "--allow-insecure": "chromedriver_autodownload"
+    },
+    "capabilities": {
+    }
+  },
+  "timeouts": {
+    "timeoutImplicit": 0,
+    "timeoutCondition": 15,
+    "timeoutPollingInterval": 300,
+    "timeoutCommand": 120
+  },
+  "retry": {
+    "number": 2,
+    "pollingInterval": 300
+  },
+  "logger": {
+    "language": "en"
+  },
+  "elementCache": {
+    "isEnabled": true
+  },
+  "touchActions": {
+    "swipe": {
+      "duration": 1,
+      "retries": 5,
+      "verticalOffset": 0.2,
+      "horizontalOffset": 0.5
+    }
+  }
+}
